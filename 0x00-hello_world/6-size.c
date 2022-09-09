@@ -3,7 +3,7 @@
  * main - print the string i the put function
  *
  * Description: use main
- * this program that prints the size of various types on the computer it is compiled and run on
+ * this program that prints the size of various types
  * Return: 0
  */
 int main(void)
