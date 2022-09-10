@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*main - print 
+*main - print
 *Description: using main function
 *program prints programming is positive, zero, or negative
 *Return: 0
