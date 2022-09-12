@@ -8,13 +8,13 @@
  */
 int mian(void)
 {
-	char i;
+	int i;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = '0'; i < '10'; i++)
 	{
-		putchar(i);
+		printf("%d", i);
 	}
 
-	putchar('\n');
+	printf("\n");
 
 	return (0)
