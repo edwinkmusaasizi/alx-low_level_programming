@@ -15,8 +15,8 @@ int main(void)
 	}
 	for (ch = 'A' ; ch <= 'Z' ; ch++)
 	{
-			putchar(ch);
-}
-putcar('\n');
-return (0);
+		putchar(ch);
+	}
+	putcar('\n');
+	return (0);
 }
