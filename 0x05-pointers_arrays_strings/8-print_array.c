@@ -1,27 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "main.h"
 
 /**
- * main - entry point
- *
- * Return: generated password
- */
+* print_array - prints n element of array
+* @a: array
+* @n: number of elements
+* Return: nothing
+*/
 
-int main(void)
+void print_array(int *a, int n)
 {
-	char c;
-	int x;
+	int inc;
 
-	srand(time(0));
-	while (x <= 2645)
+	for (inc = 0; inc < n ; inc++)
 	{
-		c = rand() % 128;
-		x += c;
-		putchar(c);
-	}
-	putchar(2772 - x);
+		if (inc != n - 1)
+			printf("%d, ", a[inc]);
+		else
+			printf("%d", a[inc]);
 
-	return (0);
+	}
+	putchar(10);
 }

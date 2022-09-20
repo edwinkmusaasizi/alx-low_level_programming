@@ -1,27 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "main.h"
 
 /**
- * main - entry point
+ * puts_half - prints a string
+ * @str: string to print
  *
- * Return: generated password
+ * Return: nothing
  */
 
-int main(void)
+void puts_half(char *str)
 {
-	char c;
-	int x;
+	int i, len = _strlen(str);
 
-	srand(time(0));
-	while (x <= 2645)
-	{
-		c = rand() % 128;
-		x += c;
-		putchar(c);
-	}
-	putchar(2772 - x);
+	for (i = ((len - 1) / 2) + 1; i < len; i++)
+		putchar(*(str + i));
+	putchar(10);
+}
 
-	return (0);
+/**
+* _strlen - returns the length of a string
+* @s: string
+*
+* Return: the length of the given string
+*/
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*(s + len) != '\0')
+		len++;
+
+	return (len);
 }
