@@ -1,5 +1,3 @@
-Task 1
-
 #include "main.h"
 /**
  *_strncat - concatenate two strings but add inputted number of bytes
