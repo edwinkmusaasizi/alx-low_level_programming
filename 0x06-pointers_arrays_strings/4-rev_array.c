@@ -1,7 +1,4 @@
-Task 4
-
-include "main.h"
-
+#include "main.h"
 /**
 *  reverse_array - function that reverse content of array
 *  @a: array

@@ -1,5 +1,3 @@
-Task 2
-
 #include "main.h"
 /**
 *  _strncpy - C function that copies a string
